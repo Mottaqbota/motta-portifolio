@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://kit.fontawesome.com/3b0b4b5c7b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Portifólio - Landing Page</title>
+</head>
+
+
+<body>
+    <header>
+        <img class="img-logo" src="https://media.discordapp.net/attachments/1120101741514461194/1120101807717359707/Motta_Logo_-_Fundo_Roxo_Letras_Amarelas.png" alt="Logo Motta">
+        <nav>
+            <a href="#Home" class="link-nav link-ativo">Home</a>
+            <a href="#Sobre" class="link-nav">Sobre</a>
+            <a href="#Projetos" class="link-nav">Projetos</a>
+            <a href="#" class="link-nav">Conhecimentos</a>
+        </nav>
+        <ion-icon id="btnMenu" class="btnMenu-ativo" onclick="toggleNav()" name="menu"></ion-icon>
+    </header>
+
+    <section id="Home" class="section-home">
+        <p id="name-discord"><ion-icon class="icon-check" name="checkmark-outline"></ion-icon>Discord Copiado!</p>
+        <div class="card-left">
+            <h1 class="h1-titleName">Olá, meu nome é<br></h1>
+            <p id="text-write"></p>
+        </div>
+        <div class="card-right">   
+            <h1 class="h1-services">Serviços</h1>
+            <p class="text-services">Estou aprimorando minhas Habilidades. Entre em contato comigo para saber mais ou contatar um Serviço!</p>
+            <a href="#Sobre" class="btn-showMore">Ver Mais<ion-icon name="arrow-forward"></ion-icon></a>
+            <div class="container-contacts">
+                <button class="btn-contact" onclick="copyText()"><ion-icon name="logo-discord"></ion-icon></button>
+                <button class="btn-contact"><ion-icon name="mail"></ion-icon></button>
+                <button class="btn-contact"><ion-icon name="logo-instagram"></ion-icon></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="Sobre" class="section-sobre">
+        <div class="container-sobre">
+            <h1 class="h1-titleSobre">Sobre mim</h1>
+            <p class="text-sobre">Prazer, me chamo João Victor, mas também conhecido como Motta, tenho 16 anos e estou cursando o 2ª do Ensino Médio. Estudo a área da programação à pouco mais de 2 anos, mas apenas neste ano de 2023 que começei realmente a focar em, aprimorar meus conhecimentos e realizar projetos. Já tive a Experiência como Desenvolvedor de alguns servidores de <a href="https://fivem.net" style="text-decoration: underline;">Fivem</a> no ano de 2020/2021, mas nada muito complexo, como: Modificar alguns Resources (Lua), Criar Mapas 3D, Modelagem de Roupas e Criações de Interfaces (UI) Front-End. E agora estou criando novos projetos tanto em Design (Figma), quanto no Desenvolvimento Front-end.</p>
+        </div>
+
+        <div class="container-dev">
+            <h1 class="h1-titleDev">O que Posso desenvolver pra você?</h1>
+            <div class="card-dev">
+                <h1 class="h1-dev">Design UI/UX</h1>
+                <img class="img-dev" src="https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format" alt="">
+                <a href="#Projetos" class="btn-dev"><ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+            <span></span>
+            <div class="card-dev">
+                <h1 class="h1-dev">Dev Front End</h1>
+                <img class="img-dev" src="https://logospng.org/download/html-5/logo-html-5-1536.png" alt="">
+                <a class="btn-dev"><ion-icon name="arrow-forward"></ion-icon></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="Projetos" class="section-projetos">
+        <div class="container-figma">
+            <h1>Figma</h1>
+            <div class="card-projeto">
+                <h1 class="h1-title-projeto">Loja de Relógios</h1>
+                <p class="text-projeto">Projeto sendo feito para um trabalho do Colégio</p>
+                <div id="tag-stats">Em Andamento...</div>
+                <img class="preview-vid" src="previews/preview-figma-project.gif"></img>
+                <a href="https://www.figma.com/file/YsvMElnwMLHfgIMVTVZRaB/Projeto-Principal?type=design&node-id=0%3A1&mode=design&t=TdSYKmORivawM729-1" class="link-projetos">Vizualizar Projeto</a>
+            </div>
+            <div class="card-projeto">
+                <h1 class="h1-title-projeto">Inventário Academy - Fivem</h1>
+                <p class="text-projeto">Inventário produzido - Finalizado</p>
+                <div id="tag-stats">Finalizado!</div>
+                <img class="preview-vid" src="previews/preview-figma-inventory-motta.png"></img>
+                <a href="https://www.figma.com/file/YsvMElnwMLHfgIMVTVZRaB/Projeto-Principal?type=design&node-id=0%3A1&mode=design&t=TdSYKmORivawM729-1" class="link-projetos">Vizualizar Projeto</a>
+            </div>
+        </div>
+        <!-- <a href="" class="link-projetos">Vizualizar Projeto</a> -->
+    </section>
+
+</body>
+</html>
