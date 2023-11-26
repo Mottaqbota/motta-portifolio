@@ -10,7 +10,6 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Portifólio - Landing Page</title>
 </head>
 
@@ -34,29 +33,29 @@
             <p id="text-write"></p>
         </div>
         <div class="card-right">   
-            <h1 class="h1-services">Serviços</h1>
+            <h1 class="h1-title">Serviços</h1>
             <p class="text-services">Estou aprimorando minhas Habilidades. Entre em contato comigo para saber mais ou contatar um Serviço!</p>
             <a href="#Sobre" class="btn-showMore">Ver Mais<ion-icon name="arrow-forward"></ion-icon></a>
             <div class="container-contacts">
-                <button class="btn-contact" onclick="copyText()"><ion-icon name="logo-discord"></ion-icon></button>
-                <button class="btn-contact"><ion-icon name="mail"></ion-icon></button>
-                <button class="btn-contact"><ion-icon name="logo-instagram"></ion-icon></button>
+                <button title="Copiar Discord!" class="btn-contact" onclick="copyText()"><ion-icon name="logo-discord"></ion-icon></button>
+                <button title="Fale comigo no Instagram!" class="btn-contact"><ion-icon name="logo-instagram"></ion-icon></button>
+                <button title="Entre em Contato por Email!" class="btn-contact"><ion-icon name="mail"></ion-icon></button>
             </div>
         </div>
     </section>
-
+    
     <section id="Sobre" class="section-sobre">
         <div class="container-sobre">
-            <h1 class="h1-titleSobre">Sobre mim</h1>
+            <h1 class="h1-title">Sobre mim</h1>
             <p class="text-sobre">Prazer, me chamo João Victor, mas também conhecido como Motta, tenho 16 anos e estou cursando o 2ª do Ensino Médio. Estudo a área da programação à pouco mais de 2 anos, mas apenas neste ano de 2023 que começei realmente a focar em, aprimorar meus conhecimentos e realizar projetos. Já tive a Experiência como Desenvolvedor de alguns servidores de <a href="https://fivem.net" style="text-decoration: underline;">Fivem</a> no ano de 2020/2021, mas nada muito complexo, como: Modificar alguns Resources (Lua), Criar Mapas 3D, Modelagem de Roupas e Criações de Interfaces (UI) Front-End. E agora estou criando novos projetos tanto em Design (Figma), quanto no Desenvolvimento Front-end.</p>
         </div>
-
+        
         <div class="container-dev">
-            <h1 class="h1-titleDev">O que Posso desenvolver pra você?</h1>
+            <h1 class="h1-title">O que Posso desenvolver pra você?</h1>
             <div class="card-dev">
                 <h1 class="h1-dev">Design UI/UX</h1>
                 <img class="img-dev" src="https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format" alt="">
-                <a href="#Projetos" class="btn-dev"><ion-icon name="arrow-forward"></ion-icon></a>
+                <a href="#FigmaProjects" class="btn-dev"><ion-icon name="arrow-forward"></ion-icon></a>
             </div>
             <span></span>
             <div class="card-dev">
@@ -68,25 +67,40 @@
     </section>
     
     <section id="Projetos" class="section-projetos">
-        <div class="container-figma">
-            <h1>Figma</h1>
-            <div class="card-projeto">
-                <h1 class="h1-title-projeto">Loja de Relógios</h1>
-                <p class="text-projeto">Projeto sendo feito para um trabalho do Colégio</p>
-                <div id="tag-stats">Em Andamento...</div>
+        <div class="card-h1">
+            <img class="img-h1" src="https://cdn.sanity.io/images/599r6htc/localized/46a76c802176eb17b04e12108de7e7e0f3736dc6-1024x1024.png?w=670&h=670&q=75&fit=max&auto=format" alt="">
+            <h1 class="h1-figma">Projetos Figma</h1>
+            <!-- <img class="img-h1" src="https://logospng.org/download/html-5/logo-html-5-1536.png" alt="">     -->
+        </div>
+        <div class="container-figma" id="FigmaProjects">
+            <!-- <div class="card-projeto">
+                <h1>Loja de Relógios</h1>
+                <p class="text-projeto">Loja de relógios feita para um trabalho do Colégio</p>
                 <img class="preview-vid" src="previews/preview-figma-project.gif"></img>
-                <a href="https://www.figma.com/file/YsvMElnwMLHfgIMVTVZRaB/Projeto-Principal?type=design&node-id=0%3A1&mode=design&t=TdSYKmORivawM729-1" class="link-projetos">Vizualizar Projeto</a>
+                <a href="https://www.figma.com/file/YsvMElnwMLHfgIMVTVZRaB/Projeto-Principal?type=design&node-id=0%3A1&mode=design&t=TdSYKmORivawM729-1" class="link-projetos"> Visualizar Projeto</a>
             </div>
             <div class="card-projeto">
-                <h1 class="h1-title-projeto">Inventário Academy - Fivem</h1>
-                <p class="text-projeto">Inventário produzido - Finalizado</p>
-                <div id="tag-stats">Finalizado!</div>
+                <h1>Inventário Academy - Fivem</h1>
+                <p class="text-projeto">Interface de Inventário</p>
                 <img class="preview-vid" src="previews/preview-figma-inventory-motta.png"></img>
-                <a href="https://www.figma.com/file/YsvMElnwMLHfgIMVTVZRaB/Projeto-Principal?type=design&node-id=0%3A1&mode=design&t=TdSYKmORivawM729-1" class="link-projetos">Vizualizar Projeto</a>
+                <a href="https://www.figma.com/file/YsvMElnwMLHfgIMVTVZRaB/Projeto-Principal?type=design&node-id=0%3A1&mode=design&t=TdSYKmORivawM729-1" class="link-projetos">Visualizar Projeto</a>
             </div>
+            <div class="card-projeto">
+                <h1>Mod Menu (Funcional)</h1>
+                <p class="text-projeto">Interface para Mod Menu</p>
+                <img class="preview-vid" src="previews/preview-figma-mod-menu.png"></img>
+                <a href="https://www.figma.com/proto/BRuNuXFCgVcEaY2OkNnORQ/Wave-Menu?node-id=1-8&starting-point-node-id=1%3A8&mode=design&t=Vjhh7XYgX5iMvFM9-1" class="link-projetos">Visualizar Projeto</a>
+            </div>
+            <div class="card-projeto">
+                <h1>Landing Page</h1>
+                <p class="text-projeto">Landing Page para venda de um Notebook</p>
+                <img class="preview-vid" src="previews/preview-figma-landing-page.png"></img>
+                <a href="https://www.figma.com/proto/wNDbjQBLAY8lWpEiyYyqiF/Untitled?node-id=2-2&starting-point-node-id=2%3A2&scaling=scale-down-width&mode=design&t=l9oQ4jhqX9mk484d-1" class="link-projetos">Visualizar Projeto</a>
+            </div> -->
         </div>
         <!-- <a href="" class="link-projetos">Vizualizar Projeto</a> -->
     </section>
-
+    
 </body>
+<script src="script.js"></script>
 </html>
