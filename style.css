@@ -36,6 +36,7 @@ body {
     flex-direction: column;
     background: var(--primary-bg-color);
     overflow-x: hidden;
+    /* cursor: url(https://cdn.custom-cursor.com/db/pointer/32/Swapped_macOS_Cursor.png) , auto; */
 }
 
 section {
@@ -46,6 +47,10 @@ section {
 ion-icon {
     text-align: center;
     font-size: 20px;
+}
+
+button {
+    cursor: pointer;
 }
 
 /* ============== { Header } ==============*/
@@ -71,7 +76,6 @@ nav {
     height: 100%;
 }
 .img-logo {
-    cursor: pointer;
     height: 90%;
     border-radius: 100%;
 }
@@ -202,7 +206,7 @@ nav {
     padding: 1.5vw;
     background-color: var(--secondary-bg-color);
     &:hover {
-        cursor: pointer;
+
         box-shadow: 0px 0px 2px 2px var(--primary-color);
     }
 }
@@ -252,20 +256,21 @@ nav {
     flex-direction: row;
     flex-wrap: wrap;
     padding: 4vw;
+    height: 80vh;
     background: linear-gradient(var(--primary-bg-color) 70%,  var(--secondary-bg-color)100%);
 }
 
 .container-sobre {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
     width: 60%;
     gap: 2vw;
     padding: 1vw;
 }
 
-.h1-titleSobre {
+.h1-title {
     font-weight: 500;
     font-size: 20px;
     color: var(--secondary-text-color);
@@ -294,12 +299,6 @@ nav {
     height: 2px;
     border-radius: 2px;
     background-color: var(--secondary-bg-color);
-}
-
-.h1-titleDev {
-    font-weight: 500;
-    font-size: 20px;
-    color: var(--secondary-text-color);
 }
 
 .card-dev {
@@ -343,7 +342,6 @@ nav {
     background: var(--secondary-color);
 }
 .btn-dev:hover{
-    cursor: pointer;
     opacity: 1;
     background: var(--primary-color);
     box-shadow: -2px 0px 12px 0px var(--primary-color);
@@ -353,50 +351,59 @@ nav {
 
 .section-projetos {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     background: linear-gradient(var(--secondary-bg-color) 0%,  var(--primary-bg-color)60%);
     height: auto;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.card-h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+    border-radius: 12px;
+    background: var(--secondary-bg-color);
+}
+
+.img-h1 {
+    width: 50px;
+}
+
+.h1-figma {
+    text-transform: uppercase;
+    font-size: 26px;
 }
 
 .container-figma {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
     width: 100%;
     height: 100%;
 }
 
 .card-projeto {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
     flex-direction: column;
-    width: 40%;
-    height: 60vh;
+    width: 400px;
+    height: 400px;
     padding: 26px;
-    border-radius: 16px;
-    box-shadow: 0px 0px 24px 0px var(--secondary-text-shadow);
+    border-radius: 12px;
+    /* box-shadow: 0px 0px 24px 0px var(--secondary-text-shadow); */
     background: var(--secondary-bg-color);
 }
 
-#tag-stats {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1vw;
-    font-size: 1vw;
-    border-radius: 1vw;
-    color: var(--primary-text-color);
-    background: var(--secondary-color);
-}
-
-.h1-title-projeto {
-
-}
-
 .text-projeto {
+    color: var(--secondary-text-color);
     width: 100%;
 }
 
@@ -405,10 +412,15 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 12px;
+    width: 100%;
+    border-radius: 12px;
+    background: var(--primary-color);
 }
 
 .preview-vid {
-    width: 80%;
+    width: 100%;
+    height: 200px;
+    border-radius: 6px;
 }
 
 #btnMenu {
@@ -515,6 +527,13 @@ nav {
     }
     #name-discord {
         padding: 2vw;
+    }
+
+    .container-figma {
+        flex-direction: column;
+    }
+    .card-projeto {
+        width: 90%;
     }
 }
 
